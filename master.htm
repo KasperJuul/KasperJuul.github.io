@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Kasper Juul</title>
+<title>Kasper Juul - Heartfelt</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- CSS
@@ -11,7 +11,6 @@
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/bootstrap-responsive.css">
 <link rel="stylesheet" href="css/prettyPhoto.css" />
-<link rel="stylesheet" href="css/flexslider.css" />
 <link rel="stylesheet" href="css/custom-styles.css">
 
 <!--[if lt IE 9]>
@@ -23,113 +22,69 @@
 ================================================== -->
 <link rel="shortcut icon" href="img/favicon_JPp_icon.ico">
 
+
 <!-- JS
 ================================================== -->
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/jquery.prettyPhoto.js"></script>
-<script src="js/jquery.flexslider.js"></script>
+<script src="js/jquery.quicksand.js"></script>
 <script src="js/jquery.custom.js"></script>
-<script type="text/javascript">
-$(document).ready(function () {
-
-    $("#btn-blog-next").click(function () {
-      $('#blogCarousel').carousel('next')
-    });
-     $("#btn-blog-prev").click(function () {
-      $('#blogCarousel').carousel('prev')
-    });
-
-     $("#btn-client-next").click(function () {
-      $('#clientCarousel').carousel('next')
-    });
-     $("#btn-client-prev").click(function () {
-      $('#clientCarousel').carousel('prev')
-    });
-    
-});
-
- $(window).load(function(){
-
-    $('.flexslider').flexslider({
-        animation: "slide",
-        slideshow: true,
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-    });  
-});
-
-</script>
 
 </head>
 
-<body class="home">
-    <!-- Color Bars (above header)-->
+<body>
 	<div class="color-bar-1"></div>
     <div class="color-bar-2 color-bg"></div>
     
-    <div class="container">
+    <div class="container main-container">
     
-        <div class="row header"><!-- Begin Header -->
-            <br>
-            <!-- Logo ================================================== -->
-            <div style="text-align: center;">
-                <img src="img/kasperjuul-logo.png" alt="" />
-                <br>
-                <h2>Digital Media Engineer</h2>
-                <a href="Kasper_Juul-CV-EN.pdf"><h3>CV</h3></a>
-            </div>
-            
+      <div class="row header"><!-- Begin Header -->
         
-        </div><!-- End Header -->
+
+      </div><!-- End Header -->
      
-    
-    
-        <div class="row gallery-row"><!-- Begin Gallery Row --> 
-        
-            <div class="span12">
-                <h5 class="title-bg">Projects i have worked on</h5>
-            
-                <!-- Gallery Thumbnails
-                ================================================== -->
+    <!-- Page Content
+    ================================================== --> 
+    <div class="row">
 
-                <div class="row clearfix no-margin">
-                    <ul class="gallery-post-grid holder">
+        <!-- Gallery Items
+        ================================================== --> 
+        <div class="span12 gallery-single">
 
-                        <!-- Gallery Item 1 -->
-                        <li  class="span4 gallery-item" data-id="id-1" data-type="illustration">
-                            <span class="gallery-hover-3col hidden-phone hidden-tablet">
+            <div class="row">
+                <div class="span6">
+                    <img src="img/gallery/master01.PNG" class="align-left thumbnail" alt="image">
+                    <img src="img/gallery/master02.PNG" class="align-left thumbnail" alt="image">
+                </div>
+                <div class="span6">
+                    <h2>Deep Dungeon Adventure</h2>
+                    <p class="lead">A top-down 2D dungeon crawler, made as part of my master thesis on dynamic difficulty adjustment in games.</p>
+                    <p>The game is pretty simple featurewise as it melee combat an a single pickup (health). The main focus on the game was DDA.
+                    </p>
+                    <p>The system for DDA is heavily inspiret by the studies of Robin Hunicke, who made a DDA system called HAMLET for a game
+                        made with the GoldSrc engine. The system uses probability theory, to calculate the amount of challenge the player is 
+                        experiencing. This is measured by the probability of the player being hit by having a normal distribution on the damage taken.
+                    </p>
 
-                            </span>
-                            <a href="gallery-single.htm"><img src="img/project covers/heartfelt.png" alt="Heartfelt"></a>
-                            <span class="project-details"><a href="heartfelt.htm">Heartfelt</a>Exam project on DADIU</span>
-                        </li>
-
-                        <!-- Gallery Item 2 -->
-                        <li class="span4 gallery-item" data-id="id-2" data-type="illustration">
-                            <span class="gallery-hover-3col hidden-phone hidden-tablet">
-
-                            </span>
-                            <a href="gallery-single.htm"><img src="img/project covers/comming.png" alt="Gallery"></a>
-                            <span class="project-details"><a href="master.htm">Deep Dungeon Adventure</a>Game made for Master Thesis</span>
-                        </li>
-
-                        <!-- Gallery Item 3 -->
-                        <li class="span4 gallery-item" data-id="id-3" data-type="web">
-                            <span class="gallery-hover-3col hidden-phone hidden-tablet">
-
-                            </span>
-                            <a href="gallery-single.htm"><img src="img/project covers/bachelor.png" alt="Gallery"></a>
-                            <span class="project-details"><a href="bachelor.htm">AI bot for Starcraft: Brood War</a>Bachelor project</span>
-                        </li>
-                   
+                    <ul class="project-info">
+                        <li><h6>Date:</h6> 07/12/18</li>
+                        <li><h6>Engine:</h6> Unity</li>
+                        <li><h6>Team Size:</h6> 1</li>
+                        <li><h6>Time Given:</h6> 5 months</li>
                     </ul>
+
+                    <!-- <a class="btn btn-inverse" href="#">Thesis</a> -->
+                    <!-- <a class="btn btn-inverse" href="#">Code</a> -->
+                    <a href="index.htm" class="pull-right"><i class="icon-arrow-left"></i>Back to Portfolio</a>
                 </div>
             </div>
+
+        </div><!-- End gallery-single-->
+
+    </div><!-- End container row -->
     
-        </div><!-- End Gallery Row -->
-        
     </div> <!-- End Container -->
 
     <!-- Footer Area

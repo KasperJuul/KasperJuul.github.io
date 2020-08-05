@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Kasper Juul</title>
+<title>Kasper Juul - Heartfelt</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- CSS
@@ -11,7 +11,6 @@
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/bootstrap-responsive.css">
 <link rel="stylesheet" href="css/prettyPhoto.css" />
-<link rel="stylesheet" href="css/flexslider.css" />
 <link rel="stylesheet" href="css/custom-styles.css">
 
 <!--[if lt IE 9]>
@@ -23,113 +22,74 @@
 ================================================== -->
 <link rel="shortcut icon" href="img/favicon_JPp_icon.ico">
 
+
 <!-- JS
 ================================================== -->
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/jquery.prettyPhoto.js"></script>
-<script src="js/jquery.flexslider.js"></script>
+<script src="js/jquery.quicksand.js"></script>
 <script src="js/jquery.custom.js"></script>
-<script type="text/javascript">
-$(document).ready(function () {
-
-    $("#btn-blog-next").click(function () {
-      $('#blogCarousel').carousel('next')
-    });
-     $("#btn-blog-prev").click(function () {
-      $('#blogCarousel').carousel('prev')
-    });
-
-     $("#btn-client-next").click(function () {
-      $('#clientCarousel').carousel('next')
-    });
-     $("#btn-client-prev").click(function () {
-      $('#clientCarousel').carousel('prev')
-    });
-    
-});
-
- $(window).load(function(){
-
-    $('.flexslider').flexslider({
-        animation: "slide",
-        slideshow: true,
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-    });  
-});
-
-</script>
 
 </head>
 
-<body class="home">
-    <!-- Color Bars (above header)-->
+<body>
 	<div class="color-bar-1"></div>
     <div class="color-bar-2 color-bg"></div>
     
-    <div class="container">
+    <div class="container main-container">
     
-        <div class="row header"><!-- Begin Header -->
-            <br>
-            <!-- Logo ================================================== -->
-            <div style="text-align: center;">
-                <img src="img/kasperjuul-logo.png" alt="" />
-                <br>
-                <h2>Digital Media Engineer</h2>
-                <a href="Kasper_Juul-CV-EN.pdf"><h3>CV</h3></a>
-            </div>
-            
+      <div class="row header"><!-- Begin Header -->
         
-        </div><!-- End Header -->
+
+      </div><!-- End Header -->
      
-    
-    
-        <div class="row gallery-row"><!-- Begin Gallery Row --> 
-        
-            <div class="span12">
-                <h5 class="title-bg">Projects i have worked on</h5>
-            
-                <!-- Gallery Thumbnails
-                ================================================== -->
+    <!-- Page Content
+    ================================================== --> 
+    <div class="row">
 
-                <div class="row clearfix no-margin">
-                    <ul class="gallery-post-grid holder">
+        <!-- Gallery Items
+        ================================================== --> 
+        <div class="span12 gallery-single">
 
-                        <!-- Gallery Item 1 -->
-                        <li  class="span4 gallery-item" data-id="id-1" data-type="illustration">
-                            <span class="gallery-hover-3col hidden-phone hidden-tablet">
+            <div class="row">
+                <div class="span6">
+                    <img src="img/gallery/heartfelt01.png" class="align-left thumbnail" alt="image">
+                    <img src="img/gallery/heartfelt02.png" class="align-left thumbnail" alt="image">
+                    <img src="img/gallery/heartfelt03.png" class="align-left thumbnail" alt="image">
+                </div>
+                <div class="span6">
+                    <h2>Heartfelt</h2>
+                    <p class="lead">Isometric puzzle game, where your advantage is also your weakest point. A game about a young man going through the emotional process of being in a relationship.</p>
+                    <p>The final project made during my participation in the DADIU programme. Students gets matched in teams having all the competences needed for developing a game such as
+                        game director, game designer, leveldesigner, CG artists etc.
+                    </p>
+                    <p>The game uses only a couple of simple puzzle mechanics. But these are reused in all the levels in different ways.
+                        Enemies are monsters representing different emotions the main character is going through, and has their own behavior. The player must learn this behavior and use it to his own advantage.
+                    </p>
+                    <p>The core mechanic in the game is shooting the players heart to trigger buttons or lure enemies into traps. Enemies are drawn to the heart and not the main character himself.
+                        The heart is also the players weakpoint, from where damage will be taken. So the player must act carefully, to not just feed the heart to the bad emotions.
+                    </p>
+                    <p>This tought me to work in a team spanding over a lot of different competences, i learned how to communicate across these.</p>
 
-                            </span>
-                            <a href="gallery-single.htm"><img src="img/project covers/heartfelt.png" alt="Heartfelt"></a>
-                            <span class="project-details"><a href="heartfelt.htm">Heartfelt</a>Exam project on DADIU</span>
-                        </li>
-
-                        <!-- Gallery Item 2 -->
-                        <li class="span4 gallery-item" data-id="id-2" data-type="illustration">
-                            <span class="gallery-hover-3col hidden-phone hidden-tablet">
-
-                            </span>
-                            <a href="gallery-single.htm"><img src="img/project covers/comming.png" alt="Gallery"></a>
-                            <span class="project-details"><a href="master.htm">Deep Dungeon Adventure</a>Game made for Master Thesis</span>
-                        </li>
-
-                        <!-- Gallery Item 3 -->
-                        <li class="span4 gallery-item" data-id="id-3" data-type="web">
-                            <span class="gallery-hover-3col hidden-phone hidden-tablet">
-
-                            </span>
-                            <a href="gallery-single.htm"><img src="img/project covers/bachelor.png" alt="Gallery"></a>
-                            <span class="project-details"><a href="bachelor.htm">AI bot for Starcraft: Brood War</a>Bachelor project</span>
-                        </li>
-                   
+                    <ul class="project-info">
+                        <li><h6>Date:</h6> 07/12/18</li>
+                        <li><h6>Engine:</h6> Unity</li>
+                        <li><h6>Role:</h6> Programmer: Mechanics, Enemy behavior and UI</li>
+                        <li><h6>Team Size:</h6> 17</li>
+                        <li><h6>Time Given:</h6> 6 weeks</li>
                     </ul>
+
+                    <a class="btn btn-inverse" href="https://play.google.com/store/apps/details?id=dk.dadiu.heartfelt&hl=en">Google Play</a>
+                    <a href="index.htm" class="pull-right"><i class="icon-arrow-left"></i>Back to Portfolio</a>
                 </div>
             </div>
+
+        </div><!-- End gallery-single-->
+
+    </div><!-- End container row -->
     
-        </div><!-- End Gallery Row -->
-        
     </div> <!-- End Container -->
 
     <!-- Footer Area
